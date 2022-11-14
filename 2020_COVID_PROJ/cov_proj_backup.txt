@@ -1,0 +1,126 @@
+####################LIBRARIES################
+library(tidyverse)
+library(data.table)
+library(sf)
+library(classInt)
+library(viridis)
+library(biscale)
+library(cowplot)
+####################DATA IMPORT##############
+
+# Import County Shapefile
+counties <- st_read("cb_2017_us_county_500k/cb_2017_us_county_500k.shp", stringsAsFactors = FALSE)
+#Import data of covid cases
+cases_usa <- fread("covid_confirmed_usafacts.csv", stringsAsFactors = FALSE)
+cases_usa <- as.data.table(cases_usa)
+pop_cnty_usa <- fread("co-est2019-alldata.csv")
+
+#################Initial Filtering###########
+
+################POPULATION DATA#############
+#Filter for IL and remove excess columns
+pop_IL_IN <- pop_cnty_usa[STATE == 17 | STATE == 18,.(STATE,COUNTY,NAME = CTYNAME,POPESTIMATE2019)][COUNTY != 0,]
+#Remove county from the name of the county for IL
+pop_IL_IN$NAME <- str_remove_all(pop_IL_IN$NAME, " County")
+
+################COVID DATA######################
+#Select IL from cases file 
+cases_IL_IN <- cases_usa[State == "IL" & countyFIPS != 0 | State == "IN" & countyFIPS != 0, -c("countyFIPS","stateFIPS")]
+cases_IL_IN <- rename(cases_IL_IN, NAME = `County Name`)
+cases_IL_IN$NAME <- str_remove_all(cases_IL_IN$NAME, " County")
+cases_IL_IN <- cases_IL_IN[,!3:45] #reduced dates to 5MAR-11APR
+#########Remove Intermediate Objects###########
+rm(cases_usa)
+rm(pop_cnty_usa)
+
+########JOIN COVID and Population Data###########
+cases_pop <- left_join(cases_IL_IN %>% group_by(NAME) %>% mutate(id = row_number()),
+                       pop_IL_IN %>% group_by(NAME) %>% mutate(id = row_number()), 
+                       by = c("NAME", "id")) %>%
+                select(-STATE,-COUNTY)
+
+
+
+####################Counties Shapefile##################
+shp_IL_IN <- counties %>% filter(STATEFP == 17 | STATEFP == 18) %>%
+        select(STATEFP,NAME,ALAND,geometry)
+rm(counties)
+
+
+##########Join Shapefile to pop & covid data#############
+# The mutate id = row_number is a trick to avoid duplicate matching during the join because there
+#are counties that have the same name in both states;
+shp_cases_pop <- left_join(shp_IL_IN %>% group_by(NAME) %>% mutate(id = row_number()),
+                       cases_pop %>% group_by(NAME) %>% mutate(id = row_number()), 
+                       by = c("NAME", "id")) %>%
+                mutate(ALAND = ALAND/1000000) %>%
+                mutate(DENSITY = POPESTIMATE2019/ALAND) %>%
+                rename(ALAND_sq_km = ALAND)
+
+shp_cases_pop <- shp_cases_pop %>% pivot_longer(c(`3/5/20`:`4/14/20`),names_to = "Day", values_to = "cases")
+#Convert the Day Variable to as.Date
+shp_cases_pop$Day <- as.Date(shp_cases_pop$Day, "%m/%d/%Y")
+# Convert back to SF object
+shp_cases_pop <- st_as_sf(shp_cases_pop)
+
+
+
+# #################### Chloropleth with kmeans ##################
+# # Population Density
+# set.seed(100)
+# km_density <- classIntervals(shp_cases_pop$DENSITY, n= 9, style = "kmeans")
+# shp_cases_pop$km_density_pop <-cut(shp_cases_pop$DENSITY, breaks = km_density$brks, include.lowest = TRUE)
+# breaks_km_density <- levels(shp_cases_pop$km_density_pop)
+# #All cases
+# ggplot(data = shp_cases_pop) + geom_sf() +
+#   ggtitle("Population Density of Illinois and Indiana") +
+#   aes(fill = km_density_pop) + theme(axis.text=element_blank()) + 
+#   theme(panel.background = element_blank(), panel.grid = element_blank(), 
+#         axis.ticks = element_blank()) + 
+#   scale_fill_manual(values = rev(magma(9)), breaks = rev(breaks_km_density),
+#                     name = "Population/SQkm", drop = FALSE, labels = c('2100','773','265','137','83,9','52.4','33.6','22.1','<12.8'),
+#                     guide = guide_legend(keyheight = unit(2, units = "mm"),
+#                                          keywidth = unit(8 / length(labels), units = "mm")))
+# 
+# ######### kmeans +1  for COVID Display ###################################
+# # COVID Cases
+# set.seed(100)
+# km_cases <- classIntervals(shp_cases_pop$cases, n= 8, style = "kmeans")
+# shp_cases_pop$cases_km_pls1 <-cut(shp_cases_pop$cases, breaks = c(0,1,80.5,380,953.5,2048.5,4111.5,7736.5,11943.5,16323), include.lowest = TRUE)
+# breaks_cases_km_1 <- levels(shp_cases_pop$cases_km_pls1)
+# label_scale_km_1 <- rev(breaks_cases_km_1)
+# 
+# #filter for every 5th day 
+# ggplot(filter(shp_cases_pop,Day == "0020-03-06" | Day == "0020-03-11" |
+#                 Day == "0020-03-16" | Day == "0020-03-21" | Day == "0020-03-26" | 
+#                 Day == "0020-03-31" | Day == "0020-04-04" | Day == "0020-04-09" | Day == "0020-04-14")) + geom_sf() +
+#   ggtitle("COVID cases in Illinois and Indiana") +
+#   aes(fill = cases_km_pls1) + theme(axis.text=element_blank()) + 
+#   theme(panel.background = element_blank(), panel.grid = element_blank(), 
+#         axis.ticks = element_blank()) + 
+#   scale_fill_manual(values = rev(magma(9)), breaks = rev(breaks_cases_km_1),
+#                     name = "COVID Cases", drop = FALSE, labels = c('16300','11900','7740','4110','2050','954','380','80.5','0'),
+#                     guide = guide_legend(keyheight = unit(2, units = "mm"),
+#                                          keywidth = unit(8 / length(labels), units = "mm"))) +
+#   facet_wrap("Day")
+
+########################Bivariate Plot########################
+# Need to filter for one day to avaoid error using bi_class, 
+# it cannot break the dat into quantiles due to repreats
+biv_plot <- bi_class(filter(shp_cases_pop, Day == "0020-04-14"), x = DENSITY, y = cases, style = "quantile", dim = 3)
+bivariate_map <- ggplot() + geom_sf(data = biv_plot, mapping = aes(fill = bi_class), color = "white",
+                                    size = 0.1, show.legend = FALSE) +
+  bi_scale_fill(pal = "DkViolet", dim = 3) +
+  ggtitle("Population Density and COVID-19 \n in Illinois & Indiana") +
+  bi_theme() +
+  theme(plot.title = element_text(size = 16))
+
+biv_legend <- bi_legend(pal = "DkViolet", dim = 3,xlab = "Density",ylab = "COVID-19 Cases",
+                    size = 8)
+
+# combine map with legend
+finalbivPlot <- ggdraw(bivariate_map) +
+  draw_plot(bivariate_map, 0, 0, 1, 1) +
+  draw_plot(biv_legend, 0.7, .4, 0.2, 0.2)
+
+finalbivPlot

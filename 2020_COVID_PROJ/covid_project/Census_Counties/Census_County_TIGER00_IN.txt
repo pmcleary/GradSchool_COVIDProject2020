@@ -1,0 +1,867 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: Bernardin, Lochmueller and Associates
+      Publication_Date: 20021000
+      Title:
+        Census_County_TIGER00_IN: Indiana Counties Census Data 2000
+        (Derived from U.S. Census Bureau, 1:24,000 Polygon Shapefile)
+      Edition: Census 2000
+      Geospatial_Data_Presentation_Form: Vector digital data
+      Publication_Information:
+        Publication_Place: Evansville, IN
+        Publisher: Bernardin, Lochmueller and Associates
+      Online_Linkage: http://igs.indiana.edu/arcims/statewide/download.html		
+      Other_Citation_Details:
+        Dataset is one layer in the Indiana Statewide GIS Database
+        funded by Indiana Department of Transportation.  Data is from U.S. Department
+        of Commerce, U.S. Census Bureau, Census 2000 SF1 tables.
+        To find out more about Census data base derived data sets visit http://www.census.gov
+        Shapes were obtained from Indiana Geological Survey county boundary files.
+  Description:
+    Abstract:
+      Census_County_TIGER00_IN contains locations for all Indiana counties and
+      contains census data for each county. Data is from U.S. Department of Commerce,
+      U.S. Census Bureau, Census 2000 SF1 tables.
+    Purpose:
+      BROAD, GENERAL information for planning, development, and research
+      in Indiana
+
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20000101
+    Currentness_Reference: Census 2000 database
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: Irregular
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -88.0157
+      East_Bounding_Coordinate: -86.8562
+      North_Bounding_Coordinate: 38.5276
+      South_Bounding_Coordinate: 37.3724
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: Geography Network Keyword Thesaurus
+      Theme_Keyword: society
+	  Theme_Keyword: boundaries  
+    Theme:
+      Theme_Keyword_Thesaurus: None
+      Theme_Keyword: Feature Identifier
+      Theme_Keyword: Counties
+      Theme_Keyword: Census
+      Theme_Keyword: Statistical Boundary
+      Theme_Keyword: Polygon
+      Theme_Keyword: TIGER/Line
+      Theme_Keyword: Demographic
+      Theme_Keyword: Minorities
+      Theme_Keyword: Age
+      Theme_Keyword: Population
+      Theme_Keyword: Home Ownership
+      Theme_Keyword: Families
+    Place:
+      Place_Keyword_Thesaurus: None
+      Place_Keyword: Indiana
+      Place_Keyword: Adams County
+      Place_Keyword: Allen County
+      Place_Keyword: Bartholomew County
+      Place_Keyword: Benton County
+      Place_Keyword: Blackford County
+      Place_Keyword: Boone County
+      Place_Keyword: Brown County
+      Place_Keyword: Carroll County
+      Place_Keyword: Cass County
+      Place_Keyword: Clark County
+      Place_Keyword: Clay County
+      Place_Keyword: Clinton County
+      Place_Keyword: Crawford County
+      Place_Keyword: Daviess County
+      Place_Keyword: Dearborn County
+      Place_Keyword: Decatur County
+      Place_Keyword: DeKalb County
+      Place_Keyword: Delaware County
+      Place_Keyword: Dubois County
+      Place_Keyword: Elkhart County
+      Place_Keyword: Fayette County
+      Place_Keyword: Floyd County
+      Place_Keyword: Fountain County
+      Place_Keyword: Franklin County
+      Place_Keyword: Fulton County
+      Place_Keyword: Gibson County
+      Place_Keyword: Grant County
+      Place_Keyword: Greene County
+      Place_Keyword: Hamilton County
+      Place_Keyword: Hancock County
+      Place_Keyword: Harrison County
+      Place_Keyword: Hendricks County
+      Place_Keyword: Henry County
+      Place_Keyword: Howard County
+      Place_Keyword: Huntington County
+      Place_Keyword: Jackson County
+      Place_Keyword: Jasper County
+      Place_Keyword: Jay County
+      Place_Keyword: Jefferson County
+      Place_Keyword: Jennings County
+      Place_Keyword: Johnson County
+      Place_Keyword: Knox County
+      Place_Keyword: Kosciusko County
+      Place_Keyword: Lagrange County
+      Place_Keyword: Lake County
+      Place_Keyword: LaPorte County
+      Place_Keyword: Lawrence County
+      Place_Keyword: Madison County
+      Place_Keyword: Marion County
+      Place_Keyword: Marshall County
+      Place_Keyword: Martin County
+      Place_Keyword: Miami County
+      Place_Keyword: Monroe County
+      Place_Keyword: Montgomery County
+      Place_Keyword: Morgan County
+      Place_Keyword: Newton County
+      Place_Keyword: Noble County
+      Place_Keyword: Ohio County
+      Place_Keyword: Orange County
+      Place_Keyword: Owen County
+      Place_Keyword: Parke County
+      Place_Keyword: Perry County
+      Place_Keyword: Pike County
+      Place_Keyword: Porter County
+      Place_Keyword: Posey County
+      Place_Keyword: Pulaski County
+      Place_Keyword: Putnam County
+      Place_Keyword: Randolph County
+      Place_Keyword: Ripley County
+      Place_Keyword: Rush County
+      Place_Keyword: Scott County
+      Place_Keyword: Shelby County
+      Place_Keyword: Spencer County
+      Place_Keyword: Starke County
+      Place_Keyword: Steuben County
+      Place_Keyword: St Joseph County
+      Place_Keyword: Sullivan County
+      Place_Keyword: Switzerland County
+      Place_Keyword: Tippecanoe County
+      Place_Keyword: Tipton County
+      Place_Keyword: Union County
+      Place_Keyword: Vanderburgh County
+      Place_Keyword: Vermillion County
+      Place_Keyword: Vigo County
+      Place_Keyword: Wabash County
+      Place_Keyword: Warren County
+      Place_Keyword: Warrick County
+      Place_Keyword: Washington County
+      Place_Keyword: Wayne County
+      Place_Keyword: Wells County
+      Place_Keyword: White County
+      Place_Keyword: Whitley County
+  Access_Constraints: None
+  Use_Constraints:
+    DATA DISCLAIMER
+    This data set was compiled by Bernardin, Lochmueller and Associates,
+    using data believed to be accurate; however, a degree of error
+    is inherent in all data. This product is distributed "AS-IS" without
+    warranties of any kind, either expressed or implied, including but not
+    limited to warranties of suitability of a particular purpose or use. No
+    attempt has been made in either the designed format or production of these data to
+    define the limits or jurisdiction of any federal, state, or local government.
+    These data are intended for use only at the published scale or smaller and are for
+    reference purposes only. They are not to be construed as a legal document or survey
+    instrument. A detailed on-the-ground survey and historical analysis of a single
+    site may differ from this data.
+    CREDIT
+    Acknowledgment of the U.S. Census Bureau would be appreciated
+    for products derived from these files.
+
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: Bernardin, Lochmueller and Associates
+        Contact_Person: Cinda Bonds
+      Contact_Position: Environmental Biologist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 6200 Vogel Road
+        City: Evansville
+        State_or_Province: IN
+        Postal_Code: 47715-4006
+        Country: USA
+      Contact_Voice_Telephone: 800-423-7411
+      Contact_Facsimile_Telephone: 812-479-6262
+      Contact_Electronic_Mail_Address: cbonds@blainc.com
+      Hours_of_Service: 8am-5pm CST
+
+  Data_Set_Credit:
+    Indiana Statewide GIS database was produced under an Indiana Department of
+    Transportation contract. Data is from U.S. Department of Commerce, U.S. Census
+    Bureau, Census 2000 Tiger Line Files and SF1 tables. Polygons were obtained from
+    a county boundary shapefile produced by the Indiana Geological Survey.
+    US Census Bureau requests
+
+    "Acknowledgment of the U.S. Census Bureau would be appreciated for products
+    derived from these files."
+
+    Indiana Geological Survey requests
+
+    "Indiana Geological Survey be cited in any products generated from this data.
+    The following source citation should be included: [LANDSURVEY_COUNTY_POLY_IN:
+    County Boundaries of Indiana (Indiana Geological Survey, 1:24,000, Polygon Shapefile)]."
+
+  Native_Data_Set_Environment: ESRI ArcView version 3.2 shapefile format
+
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report:
+      Indiana Geological Survey metadata reports-
+
+      "All county names contained in the fields named "NAME_U" and "NAME_L" were
+      checked against the USGS 7.5-minute quadrangles. The prefix code contained
+      in the field named "NCAPC" was checked against the AccessIndiana Indiana Bureau
+      of Motor Vehicles license plates and titles county prefixes listed on license plates.
+      US Census Bureau makes no claim as to the accuracy of its SF1 table
+      attributes.  See Census Technical Documentation for more information."
+
+  Logical_Consistency_Report:
+    Indiana Geological Survey metadata reports -
+
+    "A check was made for dangling nodes and none were detected."
+
+  Completeness_Report:
+    Indiana Geological Survey metadata reports -
+
+    "A check was made to verify that the county boundaries
+    are continuous and are identical to the county boundaries contained in IN_LANDSURVEY.
+    Census SF1 table attributes were joined for all counties."
+
+  Positional_Accuracy:
+    Horizontal_Positional_Accuracy:
+      Horizontal_Positional_Accuracy_Report:
+        Indiana Geological Survey metadata reports -
+
+        "Accuracy is no better than that of the source material.  The vector lines
+        contained were corrected to DRG raster lines at an on-screen scale of 1:5,000 or better.  Polygon
+        data is a digital representation of land survey features as represented on the USGS 1:24,000 digital raster graphic (DRG) series."
+
+    Vertical_Positional_Accuracy:
+      Vertical_Positional_Accuracy_Report:
+        Vertical accuracy was not a factor in the digital production
+        of the data set. No quantitative tests were performed.
+
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Indiana Geological Survey
+          Originator: Karen K. Like (digital compiler)
+          Publication_Date: 20020621
+          Title:
+            LANDSURVEY_COUNTY_POLY_IN: County Boundaries of Indiana
+            (Indiana Geological Survey, 1:24,000, Polygon Shapefile)
+          Edition: 1.0
+          Publication_Information:
+            Publication_Place: Bloomington, Indiana
+            Publisher: Indiana Geological Survey
+      Type_of_Source_Media: digital drg
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: Unknown
+        Source_Currentness_Reference: DRG publication
+      Source_Citation_Abbreviation: County boundary
+      Source_Contribution: county boundaries shapefile
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Environmental Systems Research Institute (ESRI)
+          Publication_Date: 20020101
+          Title: Tiger Redistricting 2000 Census Data SF1 Table
+          Edition: Census 2000
+          Publication_Information:
+            Publication_Place: Redlands, California, USA
+            Publisher: Environmental Systems Research Institute (ESRI)
+          Online_Linkage: http://www.geographynetwork.com/
+      Type_of_Source_Media: tabular digital data
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2000
+        Source_Currentness_Reference: Census 2000 data release
+      Source_Citation_Abbreviation: SF1
+      Source_Contribution: SF1 tables were joined to the shapes to provide census demographic attributes.
+
+    Process_Step:
+      Process_Description:
+        Bernardin, Lochmueller and Associates joined SF1 tabular data to the
+        unique name code field in the County Boundary file.
+      Source_Used_Citation_Abbreviation: County Boundary
+      Source_Used_Citation_Abbreviation: SF1
+      Process_Date: 20021001
+      Source_Produced_Citation_Abbreviation: Census_County_TIGER00_IN
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Organization: Bernardin, Lochmueller and Associates
+            Contact_Person: Cinda Bonds
+          Contact_Position: Environmental Biologist
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: 6200 Vogel Road
+            City: Evansville
+            State_or_Province: Indiana
+            Postal_Code: 47715
+            Country: USA
+          Contact_Voice_Telephone: 812-479-6200
+          Contact_Facsimile_Telephone: 812-479-6262
+          Contact_Electronic_Mail_Address:
+            cbonds@blainc.com
+            Contact_Website:  www.blainc.com
+
+    Process_Step:
+      Process_Description:
+        This metadata was pre-parsed and parsed using CNS (Chew and Spit. v 2.6.1) and
+        MP (Metadata Parser, v 2.7.1) software written by Peter N. Schweitzer (United
+        States Geological Survey).  The errors generated by MP were all
+        addressed and corrected, except that no values were assigned to
+        "Abscissa_Resolution" and "Ordinate_Resolution."
+      Process_Date: 20030620
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Organization: Bernardin, Lochmueller and Associates
+            Contact_Person: Neal Schroeder
+          Contact_Position: Geographer, Environmental Planner
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: 6200 Vogel Road
+            City: Evansville
+            State_or_Province: IN
+            Postal_Code: 47715-4006
+            Country: USA
+          Contact_Voice_Telephone: 800-423-7411
+          Contact_Facsimile_Telephone: 812-479-6262
+          Contact_Electronic_Mail_Address: nschroeder@blainc.com
+          Hours_of_Service: 8am-5pm CST
+
+Spatial_Data_Organization_Information:
+  Indirect_Spatial_Reference: Indiana
+  Direct_Spatial_Reference_Method: Vector
+  Point_and_Vector_Object_Information:
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: GT-polygon composed of chains
+      Point_and_Vector_Object_Count: 92
+
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Planar:
+      Grid_Coordinate_System:
+        Grid_Coordinate_System_Name: Universal Transverse Mercator
+        Universal_Transverse_Mercator:
+          UTM_Zone_Number: 16
+          Transverse_Mercator:
+            Scale_Factor_at_Central_Meridian: 0.999600
+            Longitude_of_Central_Meridian: -87.000000
+            Latitude_of_Projection_Origin: 0.000000
+            False_Easting: 500000.000000
+            False_Northing: 0.000000
+      Planar_Coordinate_Information:
+        Planar_Coordinate_Encoding_Method: Coordinate Pair
+        Coordinate_Representation:
+          Abscissa_Resolution:
+          Ordinate_Resolution:
+        Planar_Distance_Units: Meters
+    Geodetic_Model:
+      Horizontal_Datum_Name: North American Datum of 1983
+      Ellipsoid_Name: GRS 80
+      Semi-major_Axis: 6378137.0000000
+      Denominator_of_Flattening_Ratio: 298.26
+
+Entity_and_Attribute_Information:
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: Census_County_TIGER00_IN
+      Entity_Type_Definition: Shapefile Attribute Table
+      Entity_Type_Definition_Source: None
+    Attribute:
+      Attribute_Label: Area
+      Attribute_Definition: Area of polygon
+      Attribute_Definition_Source: Software generated
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Software computed
+    Attribute:
+      Attribute_Label: Perimeter
+      Attribute_Definition: Perimeter of polygon
+      Attribute_Definition_Source: Software generated
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Software computed
+    Attribute:
+      Attribute_Label: Name_u
+      Attribute_Definition: County names in upper case letters
+      Attribute_Definition_Source: USGS 7.5-minute quadrangles
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Character Field
+    Attribute:
+      Attribute_Label: Name_l
+      Attribute_Definition: County names in upper and lower case letters
+      Attribute_Definition_Source: IGS standard
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Character Field
+    Attribute:
+      Attribute_Label: Ncapc
+      Attribute_Definition: Numeric county alphabetic prefix code
+      Attribute_Definition_Source: Indiana Bureau of Motor Vehicles
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 1
+          Range_Domain_Maximum: 92
+    Attribute:
+      Attribute_Label: Cnty_fips
+      Attribute_Definition: county FIPS codes.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Character Field
+    Attribute:
+      Attribute_Label: Stfid
+      Attribute_Definition:
+        Combined state, county and tract, and block group
+        FIPS code.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Character Field
+    Attribute:
+      Attribute_Label: Pop2000
+      Attribute_Definition: The 2000 population
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 5623
+          Range_Domain_Maximum: 860454
+    Attribute:
+      Attribute_Label: White
+      Attribute_Definition: Number of people identified as white.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 5550
+          Range_Domain_Maximum: 606502
+    Attribute:
+      Attribute_Label: Black
+      Attribute_Definition: Number of people identified as black.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 7
+          Range_Domain_Maximum: 207964
+    Attribute:
+      Attribute_Label: Ameri_es
+      Attribute_Definition: Number of people identified as American Indian, Eskimo, or Aleut.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 7
+          Range_Domain_Maximum: 2181
+    Attribute:
+      Attribute_Label: Asian
+      Attribute_Definition: Number of people identified as Asian
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 8
+          Range_Domain_Maximum: 12325
+    Attribute:
+      Attribute_Label: Hawn_pi
+      Attribute_Definition: Number of people identified as Hawaiian or Pacific Islander
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0
+          Range_Domain_Maximum: 365
+    Attribute:
+      Attribute_Label: Other
+      Attribute_Definition:
+        Number of people identified as belonging to a race other
+        than white, black, American Indian, or Asian.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 3
+          Range_Domain_Maximum: 24051
+    Attribute:
+      Attribute_Label: Mult_race
+      Attribute_Definition:
+        Number of people identified as belonging to a more than
+        one race
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 27
+          Range_Domain_Maximum: 14119
+    Attribute:
+      Attribute_Label: Hispanic
+      Attribute_Definition:
+        Number of people of all races identified as being of
+        Hispanic origin.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 22
+          Range_Domain_Maximum: 59128
+    Attribute:
+      Attribute_Label: Males
+      Attribute_Definition: number of males
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2768
+          Range_Domain_Maximum: 415998
+    Attribute:
+      Attribute_Label: Females
+      Attribute_Definition: number of females
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2855
+          Range_Domain_Maximum: 444456
+    Attribute:
+      Attribute_Label: Age_under5
+      Attribute_Definition: Number of people 0 to 4 years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 330
+          Range_Domain_Maximum: 63640
+    Attribute:
+      Attribute_Label: Age_5_17
+      Attribute_Definition: Number of people 5 to 17 years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 1067
+          Range_Domain_Maximum: 158109
+    Attribute:
+      Attribute_Label: Age_18_21
+      Attribute_Definition: Number of people 18 to 21 years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 281
+          Range_Domain_Maximum: 46324
+    Attribute:
+      Attribute_Label: Age_22_29
+      Attribute_Definition: Number of people 22 to 29 years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 467
+          Range_Domain_Maximum: 112213
+    Attribute:
+      Attribute_Label: Age_30_39
+      Attribute_Definition: Number of people 30 to 39 years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 815
+          Range_Domain_Maximum: 141080
+    Attribute:
+      Attribute_Label: Age_40_49
+      Attribute_Definition: Number of people 40 to 49 years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 913
+          Range_Domain_Maximum: 128971
+    Attribute:
+      Attribute_Label: Age_50_64
+      Attribute_Definition: Number of people 50 to 64years of age.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 977
+          Range_Domain_Maximum: 114583
+    Attribute:
+      Attribute_Label: Age_65_up
+      Attribute_Definition: Number of people 65 years of age and over.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 773
+          Range_Domain_Maximum: 95534
+    Attribute:
+      Attribute_Label: Med_age
+      Attribute_Definition: Median age
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 27.2
+          Range_Domain_Maximum: 40.8
+    Attribute:
+      Attribute_Label: Med_age_M
+      Attribute_Definition: Median age of males
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 25.7
+          Range_Domain_Maximum: 39.9
+    Attribute:
+      Attribute_Label: Med_age_f
+      Attribute_Definition: Median age of females
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 28.1
+          Range_Domain_Maximum: 41.5
+    Attribute:
+      Attribute_Label: Households
+      Attribute_Definition: Total number of households.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2201
+          Range_Domain_Maximum: 352164
+    Attribute:
+      Attribute_Label: Ave_hh_sz
+      Attribute_Definition: Average household size
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2.27
+          Range_Domain_Maximum: 3.09
+    Attribute:
+      Attribute_Label: Hsehld_1_m
+      Attribute_Definition: Number of one-person male households.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 216
+          Range_Domain_Maximum: 49771
+    Attribute:
+      Attribute_Label: Hsehld_1_f
+      Attribute_Definition: Number of one-person female households.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 294
+          Range_Domain_Maximum: 62219
+    Attribute:
+      Attribute_Label: Marhh_chd
+      Attribute_Definition: Number of households with a married couple and related children.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 536
+          Range_Domain_Maximum: 64880
+    Attribute:
+      Attribute_Label: Marhh_no_c
+      Attribute_Definition: Number of households with a married couple and no related children.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 782
+          Range_Domain_Maximum: 80281
+    Attribute:
+      Attribute_Label: Mhh_child
+      Attribute_Definition: Number of households with a man and children but no wife.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 53
+          Range_Domain_Maximum: 8620
+    Attribute:
+      Attribute_Label: Fhh_child
+      Attribute_Definition: Number of households with a woman and children but no husband.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 114
+          Range_Domain_Maximum: 32850
+    Attribute:
+      Attribute_Label: Families
+      Attribute_Definition: Families
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 1588
+          Range_Domain_Maximum: 213454
+    Attribute:
+      Attribute_Label: Ave_fam_sz
+      Attribute_Definition: Average family size
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2.87
+          Range_Domain_Maximum: 3.54
+    Attribute:
+      Attribute_Label: Hse_units
+      Attribute_Definition: Total number of housing units.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2424
+          Range_Domain_Maximum: 387183
+    Attribute:
+      Attribute_Label: Vacant
+      Attribute_Definition: Number of housing units that are vacant.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 223
+          Range_Domain_Maximum: 35019
+    Attribute:
+      Attribute_Label: Owner_occ
+      Attribute_Definition: Number of housing units that are occupied by the owner.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 1709
+          Range_Domain_Maximum: 208957
+    Attribute:
+      Attribute_Label: Renter_occ
+      Attribute_Definition: Number of housing units that are occupied by renters.
+      Attribute_Definition_Source:
+        U.S. Census Bureau, TIGER/Line files,
+        Census 2000 Technical Documentation
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 492
+          Range_Domain_Maximum: 143207
+
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: Bernardin, Lochmueller and Associates
+      Contact_Position: Environmental Division
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 6200 Vogel Road
+        City: Evansville
+        State_or_Province: IN
+        Postal_Code: 47715-4006
+        Country: USA
+      Contact_Voice_Telephone: 800-423-7411
+      Contact_Facsimile_Telephone:
+        812-479-6262
+        Contact_Website:  www.blainc.com
+      Hours_of_Service: 8am-5pm CST
+
+  Resource_Description: Downloadable Data
+
+  Distribution_Liability:
+    No claims to accuracy are made on this data. It is intended
+    to be used only for general planning purposes. Detailed
+    planning or analysis will require more accurate data.
+    LIMITATION OF LIABILITY
+    The product is provided "AS IS",
+    without any other warranties or conditions, expressed or implied,
+    including, but not limited to, warranties for product quality, or
+    suitability to a particular purpose or use. The risk or liability
+    resulting from the use of this product is assumed by the user.
+    Bernardin, Lochmueller and Associates shares no liability with product
+    users indirect, incidental, special, or consequential damages whatsoever,
+    including, but not limited to, loss of revenue or profit, lost or damaged
+    data or other commercial or economic loss. Bernardin, Lochmueller and Associates
+    is not responsible for claims by a third party. The
+    maximum aggregate liability to the original purchaser shall not exceed
+    the amount paid by you for the product.
+
+Metadata_Reference_Information:
+  Metadata_Date: 20021021
+  Metadata_Review_Date: 20040407
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: Bernardin, Lochmueller and Associates
+        Contact_Person: Cinda Bonds
+      Contact_Position: Environmental Biologist
+      Contact_Address:
+        Address_Type: Mailing and physical address
+        Address: 6200 Vogel Road
+        City: Evansville
+        State_or_Province: IN
+        Postal_Code: 47715-4006
+        Country: USA
+      Contact_Voice_Telephone: 800-423-7411
+      Contact_Facsimile_Telephone: 812-479-6262
+      Contact_Electronic_Mail_Address: cbonds@blainc.com
+      Hours_of_Service: 8am-5pm CST
+  Metadata_Standard_Name: FGDC CSDGM
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Access_Constraints: None
+  Metadata_Use_Constraints:
+    This metadata file is intended to accompany the
+    data set identified and received from the BLA/IGS.  It should not to be altered
+    or summarized.  BLA/IGS does not support secondary distribution.  If this
+    data set was received from anyone besides the BLA/IGS, this metadata file and
+    the data set it describes may lack integrity.
